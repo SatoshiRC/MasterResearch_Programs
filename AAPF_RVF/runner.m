@@ -1,9 +1,9 @@
 close all
 clear all
 
-dirPath = "NavigationError/";
-disp("Path: " + dirPath)
-run(dirPath+"params.m")
+derectory = "NavigationError/";
+disp("Path: " + derectory)
+run(derectory+"params.m")
 %%
 disp("Pre process")
 PreProcess_Simulation
@@ -14,7 +14,7 @@ ExeSimulation
 %%
 clear utility
 DateString = string(datetime('now','Format','MMddHHmmss'));
-save(dirPath+DateString+".mat")
+save(derectory+DateString+".mat")
 %%
 disp("result plotter")
 resultPlotter
