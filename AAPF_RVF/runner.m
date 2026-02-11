@@ -15,6 +15,3 @@ ExeSimulation
 clear utility
 DateString = string(datetime('now','Format','MMddHHmmss'));
 save(derectory+DateString+".mat")
-%%
-disp("result plotter")
-resultPlotter
