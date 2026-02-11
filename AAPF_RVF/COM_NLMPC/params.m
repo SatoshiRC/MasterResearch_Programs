@@ -12,11 +12,11 @@ initialChaserPose = repmat([-30 0 0]',1,Ncase);
 initialChaserVelo = repmat([0 0 0]',1,Ncase);
 
 %target motion params
-initialAngularVero = zeros([Ncase 3]);
+initialAngularVelo = zeros([Ncase 3]);
 att_mat = zeros(3, 75, 21);
 att_mat(2,:,:) = repmat(-3.7:0.1:3.7,1,1,21);
 att_mat(3,:,:) = repmat(-0.1:0.01:0.1,75,1);
-initialAngularVero(:,:) = reshape(att_mat,3,Ncase)';
+initialAngularVelo(:,:) = reshape(att_mat,3,Ncase)';
 
 %params for potential field
 Ka = 1;

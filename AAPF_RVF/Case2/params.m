@@ -3,8 +3,8 @@ dt = 0.1;
 Ncase = 7;
 
 %target motion params
-initialAngularVero = zeros([Ncase 3]);
-initialAngularVero(:,2) = [0 1.7 2.25 2.3 2.35 2.4 2.45];
+initialAngularVelo = zeros([Ncase 3]);
+initialAngularVelo(:,2) = [0 1.7 2.25 2.3 2.35 2.4 2.45];
 
 %chaser state
 initialChaserPose = repmat([-30 0 0]',1,Ncase);

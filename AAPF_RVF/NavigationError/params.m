@@ -3,12 +3,12 @@ dt = 0.1;
 Ncase = 3800;
 
 %target motion params
-initialAngularVero = zeros([Ncase 3]);
+initialAngularVelo = zeros([Ncase 3]);
 tmp = linspace(0, 3.7, 38);
 for i=1:Ncase
-    initialAngularVero(i,2) = tmp(ceil(i/100));
+    initialAngularVelo(i,2) = tmp(ceil(i/100));
 end
-initialAngularVero(:,3) = linspace(0.2, 0.2, Ncase);
+initialAngularVelo(:,3) = linspace(0.2, 0.2, Ncase);
 
 initialChaserPose = repmat([-30 0 0]',1,Ncase);
 initialChaserVelo = repmat([0 0 0]',1,Ncase);

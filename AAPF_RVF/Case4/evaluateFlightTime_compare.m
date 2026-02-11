@@ -18,9 +18,9 @@ for j=1:Ncase
 end
 
 f=figure("Name", "time of flight", "unit", "centimeter", "position", [0 0 11 7], "Color", "w");
-plot(initialAngularVero(:,2), proposedMethod, 'o:', 'DisplayName', 'AAPF + RVF', "Color",[0 200 80]/255, "MarkerSize",5);
+plot(initialAngularVelo(:,2), proposedMethod, 'o:', 'DisplayName', 'AAPF + RVF', "Color",[0 200 80]/255, "MarkerSize",5);
 hold on
-plot(initialAngularVero(:,2), conventionalMethod, 'x:', 'DisplayName', 'AAPF', "Color",[0 0 0]/255, "MarkerSize",5);
+plot(initialAngularVelo(:,2), conventionalMethod, 'x:', 'DisplayName', 'AAPF', "Color",[0 0 0]/255, "MarkerSize",5);
 % ylim([0 10])
 xlabel("$\omega_{B/H ,y}(0)$ [${}^\circ$/s]", "Interpreter", "latex")
 ylabel("Maneuver Time [s]", "Interpreter", "latex")
