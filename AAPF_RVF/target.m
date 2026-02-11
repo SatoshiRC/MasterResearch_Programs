@@ -63,8 +63,8 @@ classdef target < environments
 
         function dState = EOM(obj, ~, state)
             %definition of state vector
-            %   (1)-(3) velocity (x,y,z) in the ECS
-            %   (4)-(6) position (x,y,z) in the ECS
+            %   (1)-(3) velocity (x,y,z) in the ECI
+            %   (4)-(6) position (x,y,z) in the ECI
             %   (7)-(9) force input (undefined)
             
             %variables
