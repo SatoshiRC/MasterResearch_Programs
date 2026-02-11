@@ -29,7 +29,7 @@ x0_ = [0 -1*omega 0 ... target angular velocity in body frame
  
 for i=1:Ncase
     x0(i,:) = x0_;
-    x0(i,1:3) = x0(i,1:3) + initialAngularVero(i,:)*pi/180;
+    x0(i,1:3) = x0(i,1:3) + initialAngularVelo(i,:)*pi/180;
 end
 
 targetAngularVelocity = zeros([length(time) 3 Ncase]);
